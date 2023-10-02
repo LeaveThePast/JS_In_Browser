@@ -27,6 +27,8 @@ const resetGame = () => {
     document.getElementById("lost").textContent = misses;
 };
 
+getHole = (index) => document.getElementById(`hole${index}`);
+
 for (let i = 1; i <= 9; i++) {
     getHole(i).addEventListener("click", whack);
 }
